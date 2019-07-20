@@ -4,7 +4,8 @@ How to Run?
 2-Run the command "npm install -g create-react-app" to innstall React framework
 3-On the terminal go to the project directory
 4-Run the "npm start" command
-5-Local host will run and the site will run automatically on your default browser,
+5-IF THE TERMINAL RETURNS AN ERROR RUN "npm install" THEN "npm start" again !!!!!!!!
+6-Local host will run and the site will run automatically on your default browser,
    if not, just use the url localhost:3000.
 
 
