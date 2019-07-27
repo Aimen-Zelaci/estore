@@ -8,10 +8,10 @@ const Description =()=>{
   const {addToCart} = Utility();
            return (
                         <div className="row d-flex align-items-center justify-content-center mx-auto">
-                             <div className="col-6">
+                             <div className="col-9 col-lg-6">
                                 <img className="img-fluid bg-white" alt={title} src={img}/>
                              </div>
-                            <div className="col-6">
+                            <div className="col-9 col-lg-6">
                                 <p className="text-lead">{info}</p>
                                   {
                                      inCart? /*IF*/

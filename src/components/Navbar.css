@@ -86,16 +86,18 @@ a:focus::before {
   border-radius: 2px;
 }
 
-.notification:hover {
-  background: red;
-}
-
 .notification .badge {
   position: absolute;
   top: -9px !important;
   right: -20px;
-  padding:;
   border-radius: 50%;
   background: red;
   color: white;
+}
+
+@media (max-width: 750px){
+  .notification{
+    position: absolute;
+    right:0;
+  }
 }

@@ -33,10 +33,10 @@ const Cart = ()=>{
                                  {<td>
                                      <button type="button" className="btn btn-success mr-1 py-0 px-2" onClick={()=>addToCart(item.id)}>+</button>
                                            {item.count}
-                                     <button type="button" className="btn btn-success ml-1 my-2 py-0 px-2" onClick={()=>removeFromCart(item.id)}>-</button>
+                                     <button type="button" className="btn btn-success ml-1 my-2 py-0 px-2" onClick={()=>removeFromCart(item.id)} disabled={item.count===1?true:false}>-</button>
                                  </td>
                                }
-                               <td><button className="btn btn-danger" onClick={()=>{deleteFromCart(item.id)}}>Remove from cart</button></td>
+                               <td><button className="btn btn-danger" onClick={()=>{deleteFromCart(item.id)}}>Delete</button></td>
                                 </tr>
                                     )
                             })

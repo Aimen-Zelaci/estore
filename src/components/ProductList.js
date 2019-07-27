@@ -6,7 +6,7 @@ const ProductList = ()=>{
     const {products} = Utility();
 
                     return(
-                            <div className="row">
+                            <div className="row mx-auto">
                             {products.map(product=>{
                                 return <Product product={product} key={product.id} />
                             })}

@@ -22,7 +22,7 @@ const Navbar = ()=>{
 
                                 <Link to="/Cart" className="notification btn btn-outline-success text-white bg-success d-flex align-items-center justify-content-center mt-2">
                                     <span className="badge mb-2">{cartCounter}</span>
-                                    <i className="fa fa-shopping-cart  mt-2"></i>
+                                    <i className="fa fa-shopping-cart  mt-2 px-auto"></i>
                                 </Link>
             </div>
 
