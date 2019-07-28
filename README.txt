@@ -36,5 +36,4 @@ Notes about the project functionality:
 
 	deleteFromCart: Is used to delete item entirely from the cart.
 
-5-The logic of the functions is fairly simple.
 
