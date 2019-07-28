@@ -21,9 +21,6 @@ const ProductsProvider = (props)=>{
         cartCounter:0,        /*How many items in the cart*/
 
     });
-    React.useEffect = ()=>{
-
-    }
     return(
         <ProductsContext.Provider value = {[state, setState]}>
          {props.children}
