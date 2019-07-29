@@ -1,7 +1,8 @@
 import React from 'react';
-import  './Navbar.css';
+import  './CSS/Navbar.css';
 import {Link} from 'react-router-dom';
 import Utility from './context/Utility'
+
 const Navbar = ()=>{
 
     const {cartCounter} = Utility();
@@ -27,7 +28,7 @@ const Navbar = ()=>{
             </div>
 
 
-</nav>
+        </nav>
         )
 
 

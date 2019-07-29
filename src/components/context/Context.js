@@ -4,8 +4,7 @@ import {storeProducts,dTemplate} from './data'
 const ProductsContext = React.createContext ([{}, ()=> {}])
 
 /*Copying original data from data.js, in order to keep the original data unmodified.
-    Since it passed by reference here
-*/
+    Since it passed by reference here*/
 let temp=[]
 storeProducts.forEach(item=>{
     const copyItem = {...item};

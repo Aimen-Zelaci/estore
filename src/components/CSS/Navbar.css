@@ -74,6 +74,9 @@ a:focus::before {
   transform: scale(1, 1);
 }
 
+/*End of Navbar */
+
+
 /*Notification on Cart*/
 
 .notification {

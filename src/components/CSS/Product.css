@@ -1,0 +1,38 @@
+.added-to-cart{
+        position:absolute;
+        bottom:0;
+        left:0 !important;
+        margin:auto;
+}
+.wraper{
+    transition: all .5s ease-in-out;
+    line-weight:800 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.wraper:hover{
+    transform:scale(1.1);
+}
+.wraper .btn {
+        position:absolute;
+        bottom:0;
+        right:0;
+        margin:auto;
+}
+.wraper .btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #FFF5E4;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+.wraper .btn:hover::before,
+.wraper .btn:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}

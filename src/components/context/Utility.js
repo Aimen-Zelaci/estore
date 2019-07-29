@@ -14,32 +14,35 @@ const  Utility = ()=>{
 
     /*To provide the selected product for the description page after clicking the product*/
     const descProvider = (id)=>{
-            const selectedProduct = getId(id);
-            setState(state=>({...state, dTemplate:selectedProduct}))
+
+            setState(state=>({...state, dTemplate:getId(id)}))
                                 }
 
+
     const addToCart = (id)=>{
-            const selectedProduct = getId(id)
-            selectedProduct.inCart=true
-            selectedProduct.count+=1
+            const selectedProduct = getId(id);
+
+            selectedProduct.inCart=true;
+            selectedProduct.count+=1;
+
             if(selectedProduct.count>1)/*To not duplicate an item in the itemsIncart array*/{
-                setState(state=>({...state,cartCounter:cartCounter+1}))
+                setState(state=>({...state,cartCounter:cartCounter+1}));
             }else{
-                setState(state=>({...state,cartCounter:cartCounter+1,itemsInCart:[...itemsInCart,selectedProduct] }))
+                setState(state=>({...state,cartCounter:cartCounter+1,itemsInCart:[...itemsInCart,selectedProduct] }));
             }
                             }
 
     /*This is used for the quantity minus button on the cart page*/
     const removeFromCart = (id)=>{
-                     const selectedProduct=getId(id)
+                     const selectedProduct=getId(id);
 
-                     selectedProduct.inCart=false
-                     selectedProduct.count -=1
+                     selectedProduct.inCart=false;
+                     selectedProduct.count -=1;
 
                      if(!selectedProduct.count){
-                        setState(state=>({...state,cartCounter:cartCounter-1,itemsInCart:itemsInCart.filter((item)=>item.id !== id)}))
+                        setState(state=>({...state,cartCounter:cartCounter-1,itemsInCart:itemsInCart.filter((item)=>item.id !== id)}));
                     }else{
-                        setState(state=>({...state,cartCounter:cartCounter-1}))
+                        setState(state=>({...state,cartCounter:cartCounter-1}));
                     }
                                 }
 
@@ -47,9 +50,11 @@ const  Utility = ()=>{
     const deleteFromCart = (id)=>{
                     const selectedProduct = getId(id)
                     let tempCounter = cartCounter
+
                     tempCounter-=selectedProduct.count
                     selectedProduct.count=0;
                     selectedProduct.inCart = false
+
                     setState(state=>({...state,cartCounter:tempCounter,itemsInCart:itemsInCart.filter((item)=>item.id !== id)}))
                                 }
 
